@@ -1,0 +1,273 @@
+ /*----------------   color orange :  #e67e22  ---*/
+
+
+/*---------------  BASIC SETUP -------------------*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+section{
+    margin: 0px;
+    padding: 80px 0;
+}
+
+/*------------- HEADER-------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img1/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    } 
+
+header .hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------- HEADINGS-------------------*/
+
+h1{
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 250%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+         
+}
+
+/*------------- BUTTONS-------------------*/
+.btn-full:link,
+.btn-full:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #e67e22;
+    padding:10px 25px;
+    border-radius: 150px;
+    margin-right: 20px;
+    border: 1px solid  #e67e22;
+    transition: background-color 0.5s;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: #e67e22;
+    border: 1px solid  #e67e22;
+    padding: 10px 25px;
+    border-radius:150px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #cf6d17;
+    padding:10px 25px;
+    border-radius: 150px;
+    margin-right: 20px
+    border: 1px solid  #cf6d17;
+}
+    
+.btn-ghost:hover,
+.btn-ghost:active {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid  #cf6d17;
+    padding: 10px 25px;
+    border-radius:150px;
+    background-color: #cf6d17;   
+}
+
+/*------------- NAVIGATION-------------------*/
+
+nav img{
+    height:120px;
+    width: auto;
+    margin-top: 20px;
+}
+
+nav ul{ 
+    float: right;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 50px 0px 0px 25px;
+    
+    
+}
+nav a:link,
+nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 87%;
+    letter-spacing: 0.7px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    transition: border-bottom 0.5s;
+}
+
+
+nav a:hover,
+nav a:active {
+    border-bottom:2px solid #e67e22; 
+}
+
+/*------------- SECTION 1-FEATURES-------------------*/
+
+h2 {
+    text-align: center;
+    margin: 0px auto 30px auto;
+    font-weight: 300;
+    font-size: 170%;
+    letter-spacing: 2px;
+    text-transform: uppercase
+    
+}
+
+h2:after{
+    display:block;
+    background-color: #e67e22;
+    content: "";
+    margin-top: 30px;
+    text-align: center;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-bottom: 2px solid  #e67e22;
+}
+
+.long-copy{
+    width:70%;
+    line-height:140%;
+    margin-bottom: 30px;
+    margin-left: 15%;  
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+    
+}
+.box {
+    padding: 1%;
+    line-height: 130%;
+    font-size: 95%
+}
+
+.icons-big{
+    color: #e67e22;
+    display: inline-block;
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+/*------------- SECTION 2  MEALS  -------------------*/
+
+
+.meals{
+    padding: 0px;
+}
+
+.four-meals li{
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+.four-meals figure{
+    width: 100%;
+    overflow: hidden; 
+    background-color: #000;
+}
+
+.four-meals img{
+    width: 100% ;
+    opacity: 0.7;
+    transform: scale(1.13);
+    transition: opacity 0.4s, transform 0.4s;
+}
+.four-meals img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-meals {
+    padding: 0;
+} 
+
+/*
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}*/
